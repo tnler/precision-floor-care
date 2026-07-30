@@ -3,22 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Precision Floor Care — Commercial Floor Stripping &amp; Waxing | Southeast Michigan</title>
-<meta name="description" content="Commercial floor stripping, waxing, deep cleaning, tile &amp; grout, concrete polishing, and carpet extraction across Southeast Michigan. Scheduled overnight and weekends. Free on-site walkthrough — call (248) 565-5255.">
+<title>Precision Floor Care — Commercial Floor Cleaning | Southeast Michigan</title>
+<meta name="description" content="Commercial floor cleaning across Southeast Michigan. Wash, strip, and extract — every drop of dirty water is vacuumed back off the floor, never pushed around. Tile, grout, concrete, and carpet. Free on-site walkthrough — call (248) 565-5255.">
 <meta name="theme-color" content="#0A0D0B">
 <link rel="canonical" href="https://tnler.github.io/precision-floor-care/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Precision Floor Care">
-<meta property="og:title" content="Precision Floor Care — Commercial Floor Care, Southeast Michigan">
-<meta property="og:description" content="Stripping, waxing, and deep cleaning for commercial floors. Scheduled overnight so your doors open on a floor that looks new. Free walkthrough — (248) 565-5255.">
+<meta property="og:title" content="Precision Floor Care — Commercial Floor Cleaning, Southeast Michigan">
+<meta property="og:description" content="Wash, strip, extract. Every drop of dirty water gets sucked back up — never pushed into corners. Free walkthrough — (248) 565-5255.">
 <meta property="og:url" content="https://tnler.github.io/precision-floor-care/">
 <meta property="og:image" content="https://tnler.github.io/precision-floor-care/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Precision Floor Care — Commercial Floor Care, Southeast Michigan">
-<meta name="twitter:description" content="Stripping, waxing, and deep cleaning for commercial floors. Free walkthrough — (248) 565-5255.">
+<meta name="twitter:title" content="Precision Floor Care — Commercial Floor Cleaning, Southeast Michigan">
+<meta name="twitter:description" content="Wash, strip, extract. Every drop of dirty water gets sucked back up. Free walkthrough — (248) 565-5255.">
 <meta name="twitter:image" content="https://tnler.github.io/precision-floor-care/og.png">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0D0B'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%232FCE71' stroke-width='2'/%3E%3Cpath d='M3 22 L29 12' stroke='%23FF6B1A' stroke-width='3.5' fill='none'/%3E%3C/svg%3E">
@@ -28,7 +28,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Precision Floor Care",
-  "description": "Commercial floor stripping, waxing, deep cleaning, tile and grout restoration, concrete polishing, and carpet extraction serving Southeast Michigan.",
+  "description": "Commercial floor cleaning serving Southeast Michigan. Hard floor deep cleaning, tile and grout restoration, concrete degreasing, and carpet extraction — all dirty water is vacuum-recovered rather than mopped.",
   "url": "https://tnler.github.io/precision-floor-care/",
   "telephone": "+1-248-565-5255",
   "email": "noah.jaron@icloud.com",
@@ -43,14 +43,14 @@
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Floor Care Services",
+    "name": "Floor Cleaning Services",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strip & Wax" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Scrub & Recoat" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Buffing & Burnishing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hard Floor Deep Cleaning" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tile & Grout Restoration" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Cleaning & Polishing" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carpet Extraction" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Cleaning & Degreasing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carpet Extraction" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Restroom & Locker Room Floors" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recurring Maintenance Cleaning" } }
     ]
   }
 }
@@ -60,8 +60,9 @@
 /* ============================================================
    PRECISION FLOOR CARE
    Palette roles: black = the night shift (work happens after
-   close), green = restored gloss, orange = safety cone + CTA.
-   Neutrals carry a green bias so nothing reads as default grey.
+   close), green = the clean/recovered state, orange = safety
+   cone + CTA. Neutrals carry a green bias so nothing reads as
+   default grey.
    ============================================================ */
 
 :root {
@@ -169,7 +170,7 @@ body {
   overflow: hidden;
   border-bottom: 1px solid var(--hero-line);
 }
-/* faint 12" VCT grid — the actual substrate this trade works on */
+/* faint 12" tile grid — the actual substrate this trade works on */
 .hero::before {
   content: "";
   position: absolute; inset: 0;
@@ -237,7 +238,7 @@ h1.display em { font-style: normal; color: var(--green); }
   border-radius: 2px;
 }
 
-/* ---------- before / after gloss wipe ---------- */
+/* ---------- before / after wipe ---------- */
 .wipe {
   position: relative; width: 100%; aspect-ratio: 4 / 3;
   border: 1px solid var(--hero-line); border-radius: var(--r);
@@ -327,19 +328,34 @@ h1.display em { font-style: normal; color: var(--green); }
 }
 .svc-desc { color: var(--text-2); font-size: .96rem; margin: 0; }
 
+/* the difference — two claims, given room */
+.diff-grid { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+@media (min-width: 760px) { .diff-grid { grid-template-columns: 1fr 1fr; } }
+.diff-item { background: var(--surface); padding: clamp(1.6rem, 4vw, 2.25rem) clamp(1.3rem, 3vw, 1.9rem); }
+.diff-mark {
+  width: 34px; height: 34px; display: grid; place-items: center;
+  border: 2px solid var(--green); color: var(--green); margin-bottom: 1.1rem;
+}
+.diff-mark svg { width: 18px; height: 18px; }
+.diff-item h3 {
+  font-family: var(--f-display); text-transform: uppercase; letter-spacing: -0.025em;
+  font-size: clamp(1.25rem, 3vw, 1.6rem); line-height: 1; margin: 0 0 .75rem;
+}
+.diff-item p { margin: 0; color: var(--text-2); font-size: .97rem; }
+
 /* process — a real ordered sequence, so it's numbered */
 .proc { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
-@media (min-width: 820px) { .proc { grid-template-columns: repeat(4, 1fr); } }
-.step { background: var(--surface); padding: 1.6rem 1.4rem; }
+@media (min-width: 780px) { .proc { grid-template-columns: repeat(3, 1fr); } }
+.step { background: var(--surface); padding: 1.75rem 1.5rem; }
 .step-no {
   font-family: var(--f-mono); font-size: .68rem; letter-spacing: .14em;
   color: var(--orange); text-transform: uppercase;
 }
 .step h3 {
   font-family: var(--f-display); text-transform: uppercase; letter-spacing: -0.02em;
-  font-size: 1.18rem; margin: .7rem 0 .5rem; line-height: 1;
+  font-size: 1.35rem; margin: .7rem 0 .55rem; line-height: 1;
 }
-.step p { margin: 0; font-size: .92rem; color: var(--text-2); }
+.step p { margin: 0; font-size: .94rem; color: var(--text-2); }
 
 /* area */
 .area-grid { display: grid; gap: clamp(1.5rem, 4vw, 3rem); grid-template-columns: 1fr; }
@@ -358,7 +374,7 @@ h1.display em { font-style: normal; color: var(--green); }
   content: ""; width: 6px; height: 6px; background: var(--green); flex: none;
 }
 
-/* ---------- business card ---------- */
+/* ---------- contact card ---------- */
 .cardwrap { display: grid; gap: 1.75rem; grid-template-columns: 1fr; justify-items: center; }
 @media (min-width: 880px) { .cardwrap { grid-template-columns: 1fr 1fr; } }
 
@@ -404,14 +420,6 @@ h1.display em { font-style: normal; color: var(--green); }
 .bc-back-head { font-family: var(--f-display); text-transform: uppercase; letter-spacing: -.02em; font-size: .94rem; }
 .bc-foot { font-family: var(--f-mono); font-size: .57rem; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); }
 
-.print-note {
-  margin-top: 1.75rem; padding: 1rem 1.15rem; border: 1px dashed var(--line);
-  border-radius: var(--r); background: var(--surface-2);
-  font-size: .88rem; color: var(--text-2);
-}
-.print-note strong { color: var(--text); }
-.print-note code { font-family: var(--f-mono); font-size: .85em; }
-
 /* ---------- closing CTA ---------- */
 .cta { background: var(--orange); color: #fff; padding-block: clamp(3rem, 7vw, 4.5rem); }
 .cta h2 { font-size: clamp(2rem, 5.5vw, 3.4rem); }
@@ -454,23 +462,39 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
 
 /* ============================================================
    PRINT — outputs the two card faces at true 3.5in x 2in.
-   Everything else is suppressed so a plain Ctrl+P gives Noah
-   something he can cut out or hand to a printer.
    ============================================================ */
 @media print {
   @page { margin: 0.5in; }
   body { background: #fff; }
-  .hero, .section, .cta, footer, .print-note, .skip { display: none !important; }
+  .hero, .section, .cta, footer, .skip { display: none !important; }
   .section.print-cards { display: block !important; padding: 0; border: 0; }
   .section.print-cards .section-head { display: none; }
+  .wrap { max-width: none; padding-inline: 0; }
   .cardwrap { display: block; }
   .bcard {
     width: 3.5in !important; height: 2in !important; max-width: none; aspect-ratio: auto;
     box-shadow: none; border: 1px solid #999; border-radius: 0;
-    page-break-inside: avoid; break-inside: avoid; margin-bottom: .35in;
-    padding: .22in;
+    page-break-inside: avoid; break-inside: avoid; margin: 0 0 .35in;
+    padding: .20in;
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
+
+  /* The back face uses theme tokens on screen. Printing from dark mode
+     would otherwise put a near-black card back on the page, so pin it
+     to light values explicitly here. */
+  .bcard-back { background: #fff !important; color: #0B0E0C !important; }
+  .bcard-back .bc-rule { background: #0E8F45 !important; }
+  .bcard-back .bc-list li { color: #414B44 !important; }
+  .bcard-back .bc-list li::before { background: #0E8F45 !important; }
+  .bcard-back .bc-foot { color: #66716A !important; }
+
+  /* Six services plus a heading and a footer do not fit in 2in at screen
+     sizing — tighten the back face so nothing clips off the card. */
+  .bc-back-head { font-size: .82rem; }
+  .bcard-back .bc-rule { margin: .38rem 0 .45rem; }
+  .bc-list { gap: .1rem; }
+  .bc-list li { font-size: .55rem; line-height: 1.25; letter-spacing: .08em; }
+  .bc-foot { font-size: .48rem; line-height: 1.35; letter-spacing: .1em; }
 }
 </style>
 </head>
@@ -498,16 +522,16 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
       <div>
         <h1 class="display">We work<br>while you're<br><em>closed.</em></h1>
         <p class="hero-sub">
-          Commercial stripping, waxing, and deep cleaning across Southeast Michigan —
-          scheduled overnight and on weekends, so nobody on your staff loses a shift
-          and nobody walks a wet floor.
+          Commercial floor cleaning across Southeast Michigan. Everything we put
+          down comes back up — the dirty water leaves in the tank, not pushed into
+          your corners. Scheduled after close, so nobody on your staff loses a shift.
         </p>
         <div class="hero-actions">
           <a class="btn btn-call" href="tel:+12485655255">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
             (248) 565-5255
           </a>
-          <a class="btn btn-ghost" href="mailto:noah.jaron@icloud.com?subject=Floor%20care%20quote%20request">
+          <a class="btn btn-ghost" href="mailto:noah.jaron@icloud.com?subject=Floor%20cleaning%20quote%20request">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
             Email a quote request
           </a>
@@ -518,16 +542,16 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
         <div class="wipe" id="wipe">
           <canvas id="cv-before" aria-hidden="true"></canvas>
           <canvas id="cv-after" class="after" aria-hidden="true"></canvas>
-          <span class="wipe-tag l">Before — worn finish</span>
-          <span class="wipe-tag r">After — burnished</span>
+          <span class="wipe-tag l">Before — ground-in soil</span>
+          <span class="wipe-tag r">After — washed &amp; extracted</span>
           <div class="wipe-bar" aria-hidden="true"></div>
           <button class="wipe-grip" id="grip" type="button"
-                  role="slider" aria-label="Drag to compare the floor before and after restoration"
-                  aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% restored">
+                  role="slider" aria-label="Drag to compare the floor before and after cleaning"
+                  aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% cleaned">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 4 12l5 6M15 6l5 6-5 6"/></svg>
           </button>
         </div>
-        <p class="wipe-cap">Drag the handle — same tile, stripped and rewaxed</p>
+        <p class="wipe-cap">Drag the handle — same floor, washed and extracted</p>
       </div>
     </div>
   </div>
@@ -535,7 +559,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
   <div class="wrap">
     <div class="stats">
       <div class="stat"><b>Overnight</b><span>Scheduled after close</span></div>
-      <div class="stat"><b>Owner-Run</b><span>Noah on every job</span></div>
+      <div class="stat"><b>Extracted</b><span>Nothing left behind</span></div>
       <div class="stat"><b>Free</b><span>On-site walkthrough</span></div>
       <div class="stat"><b>6 Counties</b><span>Southeast Michigan</span></div>
     </div>
@@ -557,33 +581,33 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
       <div class="svc">
         <div class="svc-row">
           <div class="svc-no">S-01</div>
-          <div class="svc-name">Strip &amp; Wax</div>
-          <p class="svc-desc">Old finish stripped to bare tile, floor neutralized, then four to five coats of commercial-grade sealer and finish laid down wet-edge.</p>
+          <div class="svc-name">Hard Floor Deep Clean</div>
+          <p class="svc-desc">VCT, vinyl, LVT, and sealed hard surfaces washed, stripped of built-up traffic film, and extracted. Floors come back to their actual color instead of the grey everyone assumed was the color.</p>
         </div>
         <div class="svc-row">
           <div class="svc-no">S-02</div>
-          <div class="svc-name">Deep Scrub &amp; Recoat</div>
-          <p class="svc-desc">The maintenance option between full strips — top layers scrubbed off and two fresh coats applied. Cheaper, faster, and it keeps a floor out of the strip cycle for another year.</p>
+          <div class="svc-name">Tile &amp; Grout Restoration</div>
+          <p class="svc-desc">Pressurized hot-water cleaning that lifts what a mop just pushes around. Grout comes back toward its original color instead of holding years of mop water.</p>
         </div>
         <div class="svc-row">
           <div class="svc-no">S-03</div>
-          <div class="svc-name">Buffing &amp; Burnishing</div>
-          <p class="svc-desc">High-speed burnishing for that wet-look gloss, plus spray buffing to pull out scuffs and cart tracks in traffic lanes.</p>
+          <div class="svc-name">Concrete Cleaning &amp; Degreasing</div>
+          <p class="svc-desc">Warehouse, shop, and dock slabs degreased and rinsed. Oil and tire marks pulled out of the pores rather than smeared across them.</p>
         </div>
         <div class="svc-row">
           <div class="svc-no">S-04</div>
-          <div class="svc-name">Tile &amp; Grout Restoration</div>
-          <p class="svc-desc">Pressurized hot-water extraction that lifts what a mop just pushes around. Grout comes back to its original color; sealing available to keep it there.</p>
+          <div class="svc-name">Carpet Extraction</div>
+          <p class="svc-desc">Hot-water extraction for offices, lobbies, and corridors — spot treatment for the coffee-and-copier-room reality, dried and walkable before you open.</p>
         </div>
         <div class="svc-row">
           <div class="svc-no">S-05</div>
-          <div class="svc-name">Concrete Cleaning &amp; Polishing</div>
-          <p class="svc-desc">Warehouse, shop, and showroom slabs degreased and polished. Densifier and guard applied where the floor takes forklift traffic.</p>
+          <div class="svc-name">Restroom &amp; Locker Room Floors</div>
+          <p class="svc-desc">The rooms where mopping does the most damage, because a mop just relocates what's on the floor into the grout. These get washed and vacuumed dry.</p>
         </div>
         <div class="svc-row">
           <div class="svc-no">S-06</div>
-          <div class="svc-name">Carpet Extraction</div>
-          <p class="svc-desc">Hot-water extraction for offices, lobbies, and corridors — spot treatment for the coffee-and-copier-room reality, dried and walkable before you open.</p>
+          <div class="svc-name">Recurring Maintenance</div>
+          <p class="svc-desc">Weekly, monthly, or quarterly on a set schedule, so floors never get back to the state that made you call the first time. Same rate, same night, no re-quoting.</p>
         </div>
       </div>
     </div>
@@ -592,30 +616,52 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
   <section class="section">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">02 — Process</p>
-        <h2 class="display">How a strip &amp; wax actually goes.</h2>
-        <p>These four steps run in order, and skipping any one of them is why a floor yellows or peels three months later. Worth knowing what you're paying for.</p>
+        <p class="eyebrow">02 — The difference</p>
+        <h2 class="display">A mop moves dirt.<br>We take it with us.</h2>
+        <p>This is the part most people never see, and it's the entire reason a floor looks different after we leave than it does after a mop-and-bucket night.</p>
+      </div>
+
+      <div class="diff-grid">
+        <div class="diff-item">
+          <div class="diff-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7 7 7-7"/></svg>
+          </div>
+          <h3>Everything is sucked up.</h3>
+          <p>Solution goes down, the machine agitates, and the same pass vacuums all of it back off the floor. Whatever came off leaves the building in the recovery tank — not sitting in a low spot, not drying into a film, not waiting in the grout line for the next damp day.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>
+          </div>
+          <h3>No pushing dirty water.</h3>
+          <p>A mop bucket gets dirtier with every room, and after the second one you're spreading the first room across the rest of the floor. Nothing here gets rinsed in water that's already been used — the dirty side never touches the floor again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">03 — Process</p>
+        <h2 class="display">Three steps. Every job.</h2>
+        <p>Same sequence whether it's a lobby or a warehouse. The order matters — soil has to be loosened before it can be lifted, and lifted before it can be removed.</p>
       </div>
       <div class="proc">
         <div class="step">
           <div class="step-no">Step 01</div>
-          <h3>Strip</h3>
-          <p>Furniture out, stripper down, dwell time respected. Machine and hand-detail the edges and corners where finish builds up thickest.</p>
+          <h3>Wash</h3>
+          <p>Solution goes down across the whole area and gets time to work. Grease, traffic film, and ground-in soil soften and release instead of being scoured while dry.</p>
         </div>
         <div class="step">
           <div class="step-no">Step 02</div>
-          <h3>Neutralize</h3>
-          <p>Slurry pulled up and the floor rinsed to a neutral pH. Skip this and the new finish never bonds — it powders off by month three.</p>
+          <h3>Strip</h3>
+          <p>Machine agitation breaks the bond between the floor and everything sitting in it — including the build-up down in the grout lines and along the edges where mops never reach.</p>
         </div>
         <div class="step">
           <div class="step-no">Step 03</div>
-          <h3>Seal &amp; Finish</h3>
-          <p>Sealer first, then four to five thin coats of finish, each one dried before the next. Thin and many beats thick and few, every time.</p>
-        </div>
-        <div class="step">
-          <div class="step-no">Step 04</div>
-          <h3>Burnish</h3>
-          <p>Once cured, high-speed burnishing brings the gloss up to a hard, reflective shine that stands up to traffic instead of scuffing under it.</p>
+          <h3>Clean</h3>
+          <p>All of it gets vacuumed back up in the same pass. The floor is left clean and dry enough to walk on, and every bit of the dirty water goes out the door with us.</p>
         </div>
       </div>
     </div>
@@ -626,7 +672,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
       <div class="area-grid">
         <div>
           <div class="section-head" style="margin-bottom:1.25rem">
-            <p class="eyebrow">03 — Service Area</p>
+            <p class="eyebrow">04 — Service Area</p>
             <h2 class="display">Southeast Michigan.</h2>
             <p>Based in Oakland County and working the surrounding metro. If you're near the edge of the map, call anyway — travel is usually workable for a recurring account.</p>
           </div>
@@ -650,9 +696,9 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
   <section class="section print-cards">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">04 — Leave-behind</p>
-        <h2 class="display">The card.</h2>
-        <p>Both faces, sized to a standard 3.5&nbsp;×&nbsp;2&nbsp;inch business card. Print this page and everything else drops away — just the two faces at true size.</p>
+        <p class="eyebrow">05 — Contact</p>
+        <h2 class="display">Keep the number.</h2>
+        <p>One number, one email, and the person who actually does the work on the other end of both.</p>
       </div>
 
       <div class="cardwrap">
@@ -674,23 +720,16 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
             <div class="bc-back-head">What we handle</div>
             <div class="bc-rule" style="background:var(--green); margin:.5rem 0 .6rem"></div>
             <ul class="bc-list">
-              <li>Strip &amp; Wax</li>
-              <li>Deep Scrub &amp; Recoat</li>
-              <li>Buff &amp; Burnish</li>
+              <li>Hard Floor Deep Clean</li>
               <li>Tile &amp; Grout</li>
-              <li>Concrete Polishing</li>
+              <li>Concrete Degreasing</li>
               <li>Carpet Extraction</li>
+              <li>Restroom Floors</li>
+              <li>Recurring Service</li>
             </ul>
           </div>
-          <div class="bc-foot">Overnight &amp; weekend scheduling · Free on-site walkthrough</div>
+          <div class="bc-foot">Wash · Strip · Clean — everything sucked up, no dirty water pushed around</div>
         </div>
-      </div>
-
-      <div class="print-note">
-        <strong>Printing tip:</strong> use Ctrl&nbsp;+&nbsp;P (Cmd&nbsp;+&nbsp;P on Mac) and turn on
-        <em>Background graphics</em> in the print dialog — otherwise the black face comes out white.
-        For real cards, give a print shop these colors: black <code>#0A0D0B</code>,
-        green <code>#2FCE71</code>, orange <code>#FF6B1A</code>.
       </div>
     </div>
   </section>
@@ -706,7 +745,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
         (248) 565-5255
       </a>
-      <a class="cta-email" href="mailto:noah.jaron@icloud.com?subject=Floor%20care%20quote%20request&amp;body=Business%20name%3A%0AAddress%3A%0AApprox.%20square%20footage%3A%0AFloor%20type%20(VCT%2C%20tile%2C%20concrete%2C%20carpet)%3A%0ABest%20time%20to%20walk%20through%3A%0A">
+      <a class="cta-email" href="mailto:noah.jaron@icloud.com?subject=Floor%20cleaning%20quote%20request&amp;body=Business%20name%3A%0AAddress%3A%0AApprox.%20square%20footage%3A%0AFloor%20type%20(VCT%2C%20tile%2C%20concrete%2C%20carpet)%3A%0ABest%20time%20to%20walk%20through%3A%0A">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
         noah.jaron@icloud.com
       </a>
@@ -744,10 +783,10 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
   var grip   = document.getElementById("grip");
   if (!before || !after || !wipe || !grip) return;
 
-  /* Perspective VCT floor. Rows recede toward a horizon; the same tile
-     layout is drawn twice — once worn, once burnished — so the wipe is
+  /* Perspective tile floor. Rows recede toward a horizon; the same tile
+     layout is drawn twice — once soiled, once cleaned — so the wipe is
      genuinely the same floor in two states. */
-  function draw(cv, glossy) {
+  function draw(cv, clean) {
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     var w = cv.clientWidth, h = cv.clientHeight;
     if (!w || !h) return;
@@ -766,21 +805,21 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
 
     /* ---- back wall / ambient above the horizon ---- */
     var wall = g.createLinearGradient(0, 0, 0, horizon);
-    if (glossy) { wall.addColorStop(0, "#0c1310"); wall.addColorStop(1, "#1b2820"); }
-    else        { wall.addColorStop(0, "#141310"); wall.addColorStop(1, "#241f18"); }
+    if (clean) { wall.addColorStop(0, "#0c1310"); wall.addColorStop(1, "#1b2820"); }
+    else       { wall.addColorStop(0, "#141310"); wall.addColorStop(1, "#241f18"); }
     g.fillStyle = wall;
     g.fillRect(0, 0, w, horizon + 1);
 
-    /* ---- ceiling fixtures, only meaningful once there's gloss to catch them ---- */
+    /* ---- ceiling fixtures, only meaningful once the floor can reflect ---- */
     var fixtures = [];
     for (var fz = 1.35; fz < 9; fz *= 1.52) fixtures.push(fz);
 
     /* ---- floor base ---- */
     var base = g.createLinearGradient(0, horizon, 0, h);
-    if (glossy) {
-      /* a clean, light floor — the contrast against the dull side IS the pitch.
-         Green lives in the specular highlights, not in the tile itself. */
-      base.addColorStop(0, "#8b988f"); base.addColorStop(0.35, "#9DABA2");
+    if (clean) {
+      /* a clean, light floor — the contrast against the soiled side IS the
+         pitch. Green lives in the specular highlights, not in the tile. */
+      base.addColorStop(0, "#8B988F"); base.addColorStop(0.35, "#9DABA2");
       base.addColorStop(1, "#454E49");
     } else {
       base.addColorStop(0, "#3a352c"); base.addColorStop(0.35, "#46402f");
@@ -789,7 +828,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
     g.fillStyle = base;
     g.fillRect(0, horizon, w, h - horizon);
 
-    /* ---- individual tiles, mottled like real VCT ---- */
+    /* ---- individual tiles, mottled like real commercial tile ---- */
     var rnd = mulberry32(20260730);
     var zMin = 1.0, zMax = 14;
     for (var z = zMin; z < zMax; z += 1) {
@@ -801,11 +840,11 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
         var xa1 = xOf(X, z + 1), xb1 = xOf(X + 1, z + 1);
         if (Math.max(xa0, xb0, xa1, xb1) < 0 || Math.min(xa0, xb0, xa1, xb1) > w) continue;
 
-        var tint = (v - 0.5) * (glossy ? 12 : 20);
+        var tint = (v - 0.5) * (clean ? 12 : 20);
         g.beginPath();
         g.moveTo(xa0, y0); g.lineTo(xb0, y0); g.lineTo(xb1, y1); g.lineTo(xa1, y1);
         g.closePath();
-        g.fillStyle = glossy
+        g.fillStyle = clean
           ? "rgba(" + (156 + tint) + "," + (168 + tint) + "," + (159 + tint) + ",.45)"
           : "rgba(" + (92 + tint) + "," + (84 + tint) + "," + (66 + tint) + ",.5)";
         g.fill();
@@ -814,7 +853,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
 
     /* ---- grout lines ---- */
     g.lineWidth = 1;
-    g.strokeStyle = glossy ? "rgba(28,44,35,.30)" : "rgba(40,36,30,.4)";
+    g.strokeStyle = clean ? "rgba(28,44,35,.30)" : "rgba(40,36,30,.4)";
     for (var zz = zMin; zz <= zMax; zz += 1) {
       var yy = yOf(zz);
       if (yy < horizon) continue;
@@ -827,7 +866,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
       g.stroke();
     }
 
-    if (glossy) {
+    if (clean) {
       /* ---- specular: reflected fixtures stretch toward the viewer ---- */
       for (var i = 0; i < fixtures.length; i++) {
         var z2 = fixtures[i];
@@ -852,7 +891,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
       g.fillStyle = sheen;
       g.fillRect(0, horizon, w, h - horizon);
     } else {
-      /* ---- worn: scuff arcs, traffic lane haze, dull film ---- */
+      /* ---- soiled: scuff arcs, mop swirls, traffic film ---- */
       var r2 = mulberry32(77213);
       g.lineCap = "round";
       for (var s = 0; s < 130; s++) {
@@ -867,7 +906,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
         g.lineWidth = 0.6 + r2() * 1.5;
         g.stroke();
       }
-      /* dulling film — the yellowed, hazed look of failed finish */
+      /* the grey film mop water leaves behind as it dries */
       var haze = g.createLinearGradient(0, horizon, 0, h);
       haze.addColorStop(0, "rgba(150,138,110,.20)");
       haze.addColorStop(1, "rgba(120,110,88,.06)");
@@ -891,7 +930,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
     pct = Math.max(0, Math.min(100, next));
     wipe.style.setProperty("--split", pct + "%");
     grip.setAttribute("aria-valuenow", Math.round(pct));
-    grip.setAttribute("aria-valuetext", Math.round(pct) + "% restored");
+    grip.setAttribute("aria-valuetext", Math.round(pct) + "% cleaned");
   }
   function fromEvent(e) {
     var r = wipe.getBoundingClientRect();
@@ -929,7 +968,7 @@ footer .f-contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
     t = setTimeout(render, 140);
   });
 
-  /* One quiet reveal on load: the wipe opens to show the finished side,
+  /* One quiet reveal on load: the wipe opens to show the cleaned side,
      then settles at the midpoint so the comparison is the resting state. */
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var start = null, dur = 1400;
